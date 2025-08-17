@@ -1,9 +1,10 @@
-name = "Rot Machine"
-description = "Foods in the Machine will spoil soon, which supply plenty of spoiled food to fertilize."
+local L = locale == "zh" or locale == "zhr" -- 是否为中文
+name = L and '腐烂机' or "Rot Machine"
+description = L and "腐烂机里的食物很快就会变质，从而提供大量腐烂食物来施肥。" or "Foods in the Machine will spoil soon, which supply plenty of spoiled food to fertilize."
 
-author = "辣椒小皇纸"
+author = "辣椒小皇纸;更新：ClockyCycas"
 
-version = "1.2.0"
+version = "1.3"
 
 api_version = 10
 api_version_dst = 10
@@ -29,18 +30,18 @@ configuration_options =
 {
 	{
 		name = "language",
-		label = "Language",
+		label = L and '语言' or "Language",
 		hover = "",
 		options =	{
 						{description = "English", data = "en", hover = ""},
 						{description = "中文", data = "chs", hover = ""},
 					},
-		default = "en",
+		default = L and 'chs' or "en",
 	},
 	{
 		name = "spoiled_food",
-		label = "Spoiled Foods Needed",
-		hover = "Configure how many spoiled foods you need to craft a poop.",
+		label = L and '粪肥材料需求' or "Spoiled Foods Needed",
+		hover = L and '配置制作粪肥所需的腐烂食物数量。' or "Configure how many spoiled foods you need to craft a poop.",
 		options =	{
 						{description = "4", data = 4, hover = ""},
 						{description = "5", data = 5, hover = ""},
