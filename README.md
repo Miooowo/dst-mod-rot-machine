@@ -7,6 +7,10 @@ This is a mod for the game of Don't Starve Together which is available in the St
 Foods in the Rot Machine will spoil soon, which supply plenty of spoiled food to fertilize and rotten eggs to make gun powder.
 
 ## Changelog
+**List of tweaks I made for version 1.3**
+
+- Chinese localization added
+- Optimized the recipe code and the items that can be put into the Rot Machine.
 
 **List of tweaks I made for version 1.1**
 
